@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "bot_ow"
+version = "0.1.0"
+description = "A stupid Discord-Bot that adds `_ow` to new members nicknames"
+authors = [
+    "Simon Zehetner <sim.zehetner@gmail.com>"
+]
+license = "WTFPL"
+readme = "README.md"
+packages = [
+    { include = "bot_ow", from = "src" }
+]
+repository = "https://github.com/SimonZehetner/bot_ow"
+keywords = ["discord", "bot", "meme"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+"discord.py" = "*"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+mypy = "*"
+pre-commit = "*"
+
+[tool.poetry.scripts]
+bot_ow = "bot_ow.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[[tool.mypy.overrides]]
+module = [
+    "discord.*",
+]
+ignore_missing_imports = true

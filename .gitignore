@@ -1,0 +1,6 @@
+/.venv
+/dist
+
+__pycache__
+bot_ow.log
+.idea
