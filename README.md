@@ -19,11 +19,10 @@ git clone git@github.com:SimonZehetner/bot_ow.git && cd bot_ow
 poetry install
 # 3. Activate the venv
 source .venv/bin/activate
-# 3. Set your `DISCORD_TOKEN` environment-variable
-export DISCORD_TOKEN="<your_token_goes_here>"
-# 4. Run the Bot
-bot_ow &
+# 4. Provide the discord token and run the Bot
+bot_ow "<your_token_goes_here>" &
 ```
+Alternatively, you can specify the `DISCORD_TOKEN` environment variable
 ## Usage
 When a new member joins the server, `_ow` is appended to their nickname. The users can change their nickname back.
 

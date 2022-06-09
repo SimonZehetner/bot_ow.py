@@ -6,12 +6,13 @@ from discord import Intents, Member, Permissions
 from discord.ext.commands import Bot, Context
 
 REQUIRED_PERMISSIONS = Permissions(manage_nicknames=True)
+DEFAULT_PREFIX = "!"
 
-logger = logging.getLogger("ow_bot")
+logger = logging.getLogger(__name__)
 
 _intents = Intents.default()
 _intents.members = True
-bot_ow = Bot(intents=_intents, command_prefix="!")
+bot_ow = Bot(intents=_intents, command_prefix=DEFAULT_PREFIX)
 
 
 @bot_ow.event
