@@ -14,7 +14,7 @@ Used in [Cicero's University](https://discord.gg/Fj7yUqF)
 ### Run
 ```bash
 # 1. Clone the repo
-git clone git@github.com:SimonZehetner/bot_ow.git && cd bot_ow
+git clone git@github.com:SimonZehetner/bot_ow.py.git && cd bot_ow.py
 # 2. Install dependencies
 poetry install
 # 3. Activate the venv
